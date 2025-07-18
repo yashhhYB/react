@@ -276,6 +276,15 @@ app.get('/todos', function (req, res) {
   ]);
 });
 
+app.get('/more-todos', function (req, res) {
+  res.json([
+    {
+      id: 3,
+      text: 'rest',
+    },
+  ]);
+});
+
 if (process.env.NODE_ENV === 'development') {
   const rootDir = path.resolve(__dirname, '../');
 
